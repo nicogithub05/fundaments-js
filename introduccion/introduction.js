@@ -42,3 +42,23 @@ let objetoUno = {
 }
 
 let arrayUno = [1,2,3,4,5]
+
+let string1 = 'Hola'
+let string2 = 'mundo'
+
+let concat = `${string1} ${string2}`;
+console.log(concat); 
+
+let numeroCaracteres = string1.length; // saber cantidad de caracteres
+console.log(numeroCaracteres);
+
+// una vez decidida las comillas que vamos a utilizar, usar las mismas para todo el programa.
+
+let mayus = string1.toLowerCase();
+let minus = string2.toUpperCase();
+
+console.log(mayus, minus);
+
+let fraseLarga = 'Hola, me encanta Javascript';
+let subStr = fraseLarga.substring(17, 27)
+console.log(subStr)
