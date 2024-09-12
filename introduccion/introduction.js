@@ -62,3 +62,12 @@ console.log(mayus, minus);
 let fraseLarga = 'Hola, me encanta Javascript';
 let subStr = fraseLarga.substring(17, 27)
 console.log(subStr)
+
+
+// --- Operadores aritméticos ----
+
+const entero = 20;
+const decimal = 3.14; 
+console.log(typeof entero, typeof decimal); // typeof = ver que tipo de dato es
+
+
