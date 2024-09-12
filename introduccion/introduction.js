@@ -71,3 +71,55 @@ const decimal = 3.14;
 console.log(typeof entero, typeof decimal); // typeof = ver que tipo de dato es
 
 
+// notación cientifica 
+
+const cientifico = 12e3;
+
+// números infinito y NaN.
+
+const infini = Infinity;
+const noEsNumero = NaN; 
+
+// operaciones aritméticas. 
+
+const suma = 1 + 1;
+const resta = 1 - 1;
+const multi = 2 * 1;
+const divi = 5 / 2; 
+
+// módulo y exponente
+
+const modul = 6 % 2; // nos sirve para saber si un número es multiplo de otro. 
+const exponente = 5 ** 2;
+
+// precisión 
+
+const result = 0.1 + 0.3; // aquí nos da un número muy largo. 
+console.log(result.toFixed(1)); // nos permite definir cantidad de decimales que queremos usar. 
+console.log(result === 0.4); 
+
+// operaciones avanzadas 
+
+const raiz = Math.sqrt(12);
+console.log(raiz.toFixed);
+
+const absoluto = Math.abs(-8)
+console.log(absoluto);
+
+
+const aleatorio = Math.random()
+console.log(aleatorio);
+
+
+// ----- conversión de tipos (Type casting y coertion)
+
+// depende de si el lenguaje es interpretado o compilado. JS es interpretado. 
+
+// JS tiene un chequeo de tipos dinámico.
+
+// existen las coerciones implícitas (cuando lo convierte el lenguaje) y explícitas (cuando lo convertimos manualmente)
+
+
+
+
+
