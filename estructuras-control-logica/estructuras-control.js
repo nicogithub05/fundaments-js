@@ -57,6 +57,20 @@ if(nombre === 'Nicolas') {
     console.log('Tu nombre no es Nicolás')
 }
 
+// Ejercicio: 
+
+const numAlea = Math.floor(Math.random() * 10 + 1); 
+
+const numeroJugador = parseInt(prompt('Adivina el número secreto entre 1 y 10'))
+console.log(`El numero con el que juegas es: ${numeroJugador}`);
+
+if(numeroJugador === numAlea) {
+    console.log('El numero que elegiste es correcto.')
+} else if(numeroJugador > numAlea){
+    console.log('Número mayor: ingresa otro número')
+} else {
+    console.log('Númenor menor: ingresa otro número')
+}
 
 
 
