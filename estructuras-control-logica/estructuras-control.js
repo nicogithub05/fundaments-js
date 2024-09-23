@@ -45,6 +45,17 @@ console.log(d != e || d === f)
 console.log(!(d === f))
 
 
+// ----- Estructuras condicionales ------- //
+
+let nombre = 'Nicolas';
+
+if(nombre === 'Nicolas') {
+    console.log('Tu nombre es Nicolás');
+} else if (nombre === 'Orlando') {
+    console.log('Tu nombre es Orlando');
+} else {
+    console.log('Tu nombre no es Nicolás')
+}
 
 
 
