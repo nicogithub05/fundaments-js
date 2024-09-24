@@ -130,3 +130,14 @@ for (let i = 1; i <= 5; i++) {
   }
   console.log(row);
 }
+
+// -- ciclo while
+
+let cont = 0;
+
+while(cont < 10) {
+    console.log(cont);
+    cont++
+}
+
+
