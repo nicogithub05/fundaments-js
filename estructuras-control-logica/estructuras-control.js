@@ -140,4 +140,13 @@ while(cont < 10) {
     cont++
 }
 
+// -- ciclo do while 
+
+let contad = 0;
+do {
+    console.log(contad)
+    contad++
+} while(contad < 10);
+
+
 
