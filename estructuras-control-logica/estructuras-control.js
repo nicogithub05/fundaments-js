@@ -72,6 +72,30 @@ if(numeroJugador === numAlea) {
     console.log('Númenor menor: ingresa otro número')
 }
 
+// ------ condicional switch 
+
+let dia = 'tuesday'; 
+
+switch(dia) {
+    case 'monday': 
+    console.log('Hy es lunes');
+    break;
+    case 'tuesday': 
+    console.log('Hy es martes');
+    break;
+    case 'wednesday': 
+    console.log('Hy es miercoles');
+    break;
+    case 'thusday': 
+    console.log('Hy es jueves');
+    break;
+    case 'friday': 
+    console.log('Hy es viernes');
+    break;
+    default: 
+    console.log('Día no encontrado') 
+}
+
 
 
 
