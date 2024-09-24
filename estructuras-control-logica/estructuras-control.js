@@ -96,6 +96,37 @@ switch(dia) {
     console.log('Día no encontrado') 
 }
 
+// Condicional for 
+
+let arr = ["eat", "sleep", "code", "repeat"];
+
+for(let i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+}
+
+// ciclo for of 
+
+// se utilizan en objetos iterables -> Cuando se quiere acceder a elementos de una lista
+
+// for of arrays, strings, [algo]
+
+// for(var of objeto)
 
 
+let canasta = ['peras', 'naranjas', 'uvas', 'bananos']
 
+for(fruta of canasta) {
+    console.log(fruta)
+}
+
+// ejercicio con for 
+
+//Triángulo de asteriscos con ciclo for
+
+for (let i = 1; i <= 5; i++) {
+  let row = '';
+  for (let j = 1; j <= i; j++) {
+    row += '*';
+  }
+  console.log(row);
+}
