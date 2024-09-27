@@ -128,3 +128,43 @@ const number = 5;
 const finalResult = addTen(square(number))
 console.log(finalResult);
 
+// arrow functions & lexical bindings = Enlace léxico.
+
+// nos permiten hacer funciones mas cortas
+// nos permiten evitar el contexto de this. 
+// con las arrow function el this hace referencia al objeto global
+
+const greeting = function(name) {
+    return `hi: ${name}`;
+}
+
+const newGreeting = (name) => { // arrow function con explicit return
+    console.log(`hola me llamo ${name}`);
+    return `hi: ${name}`
+}
+
+newGreeting('Nicolas');
+
+const newGreetingWithTwoParameters = (name, lastName) => 
+    console.log(`Hola, mi nombre es ${name} ${lastName}`);
+
+newGreetingWithTwoParameters('Nicolas', 'Valencia')
+
+// lexical bindings = Enlaces léxicos: 
+
+// diferencia entre funcion normal y arrow function con lexical binding: 
+
+const finctionalCharacter = {
+    name: 'Uncle Ben', 
+    messageWithTraditionalFunction: function(message) { // método del objeto functional character
+        console.log(`${this.name} says: ${message} `)
+    }, 
+    messageWithArrowFunction: (message) => { // aquí this hace referencia al objeto global por lo que no manda el mensaje que es. 
+        console.log(`${this.name} says: ${message}`);
+    }
+}
+
+finctionalCharacter.messageWithTraditionalFunction('Todo poder conlleva una responsabilidad');
+finctionalCharacter.messageWithArrowFunction('Cuidado con el doctor Octopus');
+
+
