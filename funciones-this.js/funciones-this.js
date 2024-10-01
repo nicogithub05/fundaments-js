@@ -167,4 +167,54 @@ const finctionalCharacter = {
 finctionalCharacter.messageWithTraditionalFunction('Todo poder conlleva una responsabilidad');
 finctionalCharacter.messageWithArrowFunction('Cuidado con el doctor Octopus');
 
+// --- contexto de ejecución y scope chain 
 
+const productName = 'Smartphone'; 
+const price = 499; 
+const brand = 'TechCo';
+
+function getProductsDetails() {
+    const productName = 'laptop';
+    const price = 899; 
+    return `the ${productName} costs $${price} and is from the ${brand} `
+}
+
+console.log(getProductsDetails());
+console.log(`the ${productName} costs $${price} and is from the ${brand}`)
+
+// desde contextos locales si podemos acceder a los globales pero de globales a locales no.
+
+
+const userPoints = 150; // global scope
+
+function checkAccess() { // local scope
+    if(userPoints < 100) { // local scope
+        const message = 'Access denied: insufficient points';
+        return message;
+    } else { // local scope
+        const message = 'Acces granted: enjoy the premium features';
+        return message;
+    }
+}
+
+console.log(checkAccess());
+
+
+// ejemplo 2 
+
+const globalVariable = '😀' // global scope
+
+function localone() { // local scope
+    console.log('Global 1: ', globalVariable);
+    function localTwo() { // local scope
+        const carrot = '🥕';
+        console.log('Local 2: ', carrot)
+    };
+    function localThree() { // local scope
+        console.log('Local 3: ', carrot) // no puede acceder a carrot
+    }
+    localTwo();
+    localThree();
+}
+
+console.log(localone());
