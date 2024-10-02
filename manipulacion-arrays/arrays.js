@@ -75,5 +75,13 @@ for(let i = 0; i < numbers.length; i++){
 console.log(sum); // 15
 
 
+// métodos push - pop.
+// modifican el array original (mutabilidad)
 
+const countries = ['Colombia', 'USA', 'Canada'];
+const newCountries = countries.push('Bolivia'); // agrega elemento al final
+console.log(countries); // [ 'Colombia', 'USA', 'Canada', 'Bolivia' ]
+
+const removeCountry = countries.pop(); // remueve el último elemento
+console.log(countries);
 
