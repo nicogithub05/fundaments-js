@@ -85,3 +85,39 @@ console.log(countries); // [ 'Colombia', 'USA', 'Canada', 'Bolivia' ]
 const removeCountry = countries.pop(); // remueve el último elemento
 console.log(countries);
 
+// map -> aplica una funcion a cada elemento del array y crea uno nuevo
+
+const numbers2 = [1, 2, 3, 4, 5]
+const squareNumbers = numbers2.map(num => num * num)
+
+console.log(numbers2); // mantiene el array original
+console.log(squareNumbers); // crea uno nuevo con la función que le mandamos.
+
+// forEach 
+
+// no crea un nuevo array 
+
+const colors = ['Yellow', 'Red', 'Pink'];
+const iteratedColors = colors.forEach(color => console.log(color))
+
+console.log(colors);
+
+// exercise farenheit to celsius conversion
+
+const temperaturesFarenheit = [32, 68 , 95, 104, 212]; 
+const temperaturesCelcius = temperaturesFarenheit.map(farenheit => (5/9) * (farenheit - 32));
+
+console.log(temperaturesFarenheit);
+console.log(temperaturesCelcius);
+
+// exercise sum of elements in an array
+
+
+const numeros = [1, 2, 3, 4, 5];
+let suma = 0;  // Creamos una variable para guardar la suma
+
+numeros.forEach(numero => {
+    suma += numero;  // Cada número se va sumando a la variable suma
+});
+
+console.log('La suma total es:', suma);
