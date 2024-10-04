@@ -121,3 +121,39 @@ numeros.forEach(numero => {
 });
 
 console.log('La suma total es:', suma);
+
+// ---- filter y reduce
+
+// filter -> crea un nuevo array con elementos que cumplan con la funcion. 
+
+const numberss =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const evenNumbers = numberss.filter(number => number % 2 === 0); 
+console.log(numberss);
+console.log(evenNumbers);
+
+
+// reduce  case 1-> Ejecuta una funcion reduvtora sobre cada elemento de un array devolviendo un único valor:
+
+const numbersReduce = [1, 2, 3, 4, 5];
+
+const summ = numbersReduce.reduce((accumm, currentValue) => accumm + currentValue, 0);
+
+console.log(numbersReduce);
+console.log(summ);
+
+// reduce case 2 
+
+const words = ['Apple', 'Banana', 'Hello', 'Bye', 'Banana', 'Apple'];
+
+const wordFrequency = words.reduce((accumm, currentValue) => {
+    if(accumm[currentValue]) {
+        accumm[currentValue]++
+
+    } else {
+        accumm[currentValue] = 1;
+    }
+    return accumm
+}, {})
+
+console.log(wordFrequency);
