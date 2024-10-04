@@ -157,3 +157,22 @@ const wordFrequency = words.reduce((accumm, currentValue) => {
 }, {})
 
 console.log(wordFrequency);
+
+// find y find index 
+
+// find -> Devuelve el primer elemento del array que cumple con la funcion proporcionada
+
+
+const multipleOf5 = [5, 10, 15, 20]
+
+const firstNumberGreaterThanTen = multipleOf5.find(number => number > 10);
+console.log(multipleOf5);
+console.log(firstNumberGreaterThanTen);
+
+// findIndex 
+
+const randomNumbers = [6 , 14 , 27, 56 , 40]
+
+const indexNumber = randomNumbers.findIndex(number => number > 50)
+console.log(randomNumbers);
+console.log(indexNumber);
