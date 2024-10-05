@@ -187,5 +187,35 @@ console.log(animals.slice(2, 4)) // la ultima posicion se le resta uno. en este 
 
 console.log(animals.slice(1, 6)) // 6 para que retorne el último elemento 5 
 
+// spread operator 
+
+const originalArray = [1, 2, 3, 4, 5];
+const copyOfArray = [...originalArray] // crea una copia del array
+
+console.log(originalArray);
+console.log(copyOfArray);
+
+// 2. combining arrays with spread operator
+
+const array1 = [1, 2, 3]; 
+const array2 = [4, 5, 6];
+const combinatedArray = [...array1, ...array2];
+
+console.log(combinatedArray);
+
+// 3. Creating arrays with adittional elements
+
+const baseArray = [1, 2, 3];
+const arrayWithAdditionalElements = [...baseArray, 4, 5, 6];
+console.log(arrayWithAdditionalElements)
+
+// 4. Pass elements to function 
+
+function sum(a, b, c) {
+    return a + b + c
+}
 
 
+const numbersss = [1, 2, 3]
+const resutl = sum(...numbersss)
+console.log(resutl);
