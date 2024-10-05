@@ -176,3 +176,16 @@ const randomNumbers = [6 , 14 , 27, 56 , 40]
 const indexNumber = randomNumbers.findIndex(number => number > 50)
 console.log(randomNumbers);
 console.log(indexNumber);
+
+
+// slice  -> crea una copia superficial de una porción del array, especificada por indices de inicio y fin (fin no incluido)
+
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+console.log(animals.slice(2)); // devuelve el array desde la posicion 2
+
+console.log(animals.slice(2, 4)) // la ultima posicion se le resta uno. en este caso accede a la posición 3
+
+console.log(animals.slice(1, 6)) // 6 para que retorne el último elemento 5 
+
+
+
