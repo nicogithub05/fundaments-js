@@ -33,7 +33,25 @@ delete persona.despedirse;
 
 console.log(persona)
 
+// 2 --- Funciones constructoras 
 
+function Persona(nombre, apellido, edad) {
+    this.nombre = nombre; // this hace referencia al objeto Persona
+    this.apellido = apellido;
+    this.edad = edad;
+}
+
+const persona1 = new Persona('Nicolas', 'Valencia', 28);
+
+console.log(persona1);
+
+Persona.prototype.telefono = '555 555 5555';
+
+Persona.prototype.saludar = function() {
+    console.log(`Hola ${this.nombre}`)
+}
+
+persona1.saludar();
 
 
 
