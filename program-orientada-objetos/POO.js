@@ -133,7 +133,23 @@ perro1.segundoMetodo();
 
 
 
+// ----- this en Javascript
 
+// hace referencia al objeto o a la clase misma
 
+class Persona4 {
+    constructor(name, age) {
+        this.name = name; // his hace referencia al objeto persona4
+        this.age = age;
+    }
+}
 
+const persona5 = new Persona4('Alice', 46); 
+console.log(persona5)
+
+persona5.nuevoMetodo1 = function() {
+    console.log(`Mi nombre es ${this.name}`)
+}
+
+persona5.nuevoMetodo1();
 
