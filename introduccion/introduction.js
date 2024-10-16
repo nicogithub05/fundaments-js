@@ -101,7 +101,7 @@ console.log(result === 0.4);
 // operaciones avanzadas 
 
 const raiz = Math.sqrt(12);
-console.log(raiz.toFixed);
+console.log(raiz.toFixed());
 
 const absoluto = Math.abs(-8)
 console.log(absoluto);
